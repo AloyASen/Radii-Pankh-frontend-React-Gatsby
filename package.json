@@ -1,8 +1,8 @@
 {
   "name": "gatsby-auth-starter-aws",
-  "description": "Gatsby authentication starter for AWS",
+  "description": "frontend of the MERN stack are hosted here for the furthur upgradation with futhur opensource releases",
   "version": "1.0.0",
-  "author": "Nader Dabit <dabit3.@gmail.com>",
+  "author": "Radii Labs under supervision of Aditya Aloy Sen <info@radii.in> <adysenlab@gmail.com>",
   "dependencies": {
     "gatsby": "^2.13.45",
     "gatsby-image": "^2.2.7",
@@ -16,7 +16,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "ssh2-sftp-client": "^5.1.2"
   },
   "keywords": [
     "gatsby"
@@ -35,6 +36,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/AloyASen/Radii-Pankh-frontend-React-Gatsby"
   }
 }

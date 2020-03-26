@@ -2,7 +2,7 @@ import React from "react"
 import { navigate} from "@reach/router"
 import { Link } from 'gatsby'
 import Error from './Error'
-import { Auth } from 'aws-amplify'
+//  import { Auth } from 'aws-amplify'
 
 const initialState = {
   username: ``,
@@ -27,7 +27,7 @@ class SignUp extends React.Component {
   signUp = async() => {
     const { username, password, email, phone_number } = this.state
     try {
-      await Auth.signUp({ username, password, attributes: { email, phone_number }})
+      //await Auth.signUp({ username, password, attributes: { email, phone_number }})
       this.setState({ stage: 1 })
     } catch (err) {
       this.setState({ error: err })
@@ -38,7 +38,7 @@ class SignUp extends React.Component {
   confirmSignUp = async() => {
     const { username, authCode } = this.state
     try {
-      await Auth.confirmSignUp(username, authCode)
+      //await Auth.confirmSignUp(username, authCode)
       alert('Successfully signed up!')
       navigate("/app/login")
     } catch (err) {

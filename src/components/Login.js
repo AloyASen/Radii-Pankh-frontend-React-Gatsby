@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { navigate } from '@reach/router'
 import { setUser, isLoggedIn } from '../utils/auth'
 import Error from './Error'
-import { Auth } from 'aws-amplify'
+//import { Auth } from 'aws-amplify'
 
 class Login extends React.Component {
   state = {
@@ -21,11 +21,11 @@ class Login extends React.Component {
   login = async() => {
     const { username, password } = this.state
     try {
-      await Auth.signIn(username, password)
-      const user = await Auth.currentAuthenticatedUser()
+          // await Auth.signIn(username, password)
+          // const user = await Auth.currentAuthenticatedUser()
       const userInfo = {
-        ...user.attributes,
-        username: user.username
+            // ...useuserr.attributes,
+            // username: user.username    => this code is rendered ambiguous
       }
       setUser(userInfo)
       navigate("/app/home")
